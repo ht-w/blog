@@ -20,7 +20,7 @@ Core Framework:
 - ORM framework: MyBatisPlus
 - Database: MySQL
 - Java version: JDK1.8
-- Others: Elasticsearch, Logstash, Redis
+- Others: Elasticsearch, Logstash, Redis, Nginx
 
 
 Due to my lack of front end skills the blog page is not responsive on mobile device. I will figure it out and fix it in the future.
