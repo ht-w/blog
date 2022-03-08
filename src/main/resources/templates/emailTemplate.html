@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div id="contentDiv" onmouseover="getTop().stopPropagation(event);" onclick="getTop().preSwapLink(event, 'html' , 'ZC2019-w8XCe1CxSkWYNlYJHIeFVac');" style="position:relative;font-size:14px;height:auto; padding:15px 15px 10px 15px; z-index:1; zoom:1; line-height:1.7;" class="body">
+    <div id="qm_con_body">
+        <div id="mailContentContainer" class="qmbox_qm_con_body_content_qqmail_webmail_only" style="">
+            <div style="width:100%; background:#49BDAD; color:#fff; border-radius:10px 10px 0 0; background-image:-moz-linear-gradient(0deg, #43c6b8, #ffd1f4); background-image:-webkit-linear-gradient(0deg, #fd8c04, #9ab3f5); height: 66px">
+                <p style="font-size:15px; word-break: break-all; padding:23px 32px; margin: 0; background-color:hsla(0,0%, 100%,.4); border-radius: 10px 10px 0 0">
+                    您在 [<a href="https://hongtingwong.com/" style="text-decoration: none; color:#fff" target="_blank" rel="noopener">康庭的博客</a>]的留言有了新回复！
+                </p>
+            </div>
+            <div style="margin:40px auto; width:90%">
+                <div th:if="${mail.replyFlag}">
+                    <p>
+                        <span th:text="${mail.replyNickname}"></span>
+                        ,您曾在《
+                        <a th:href="@{'https://hongtingwong.com/article/' + ${mail.articleId}}" style="text-decoration: none; color:#12addb" target="_blank" rel="noopener" th:text="${mail.title}">
+                    </a>》上发表留言：
+                    </p>
+                    <p th:text="${mail.replyContent}" style="white-space: pre-wrap; background:#fafafa repeating-linear-gradient(-45deg, #fff, #fff 1.125rem, transparent 1.125rem, transparent 2.25rem); box-shadow:0px 2px 5px rgba(0,0,0,.15); margin:20px 0 ; padding :15px; border-radius:5px; font-size:14px; color: #555"></p>
+                </div>
+                <p><span style="color: #ff4b5c" th:text="${mail.nickname}"></span> 在《<a th:href="@{'https://hongtingwong.com/article/' + ${mail.articleId}}" style="text-decoration: none; color:#12addb" target="_blank" rel="noopener" th:text="${mail.title}"></a>》给您的回复如下： </p>
+                <p style="white-space: pre-wrap; background:#fafafa repeating-linear-gradient(-45deg, #fff, #fff 1.125rem, transparent 1.125rem, transparent 2.25rem); box-shadow:0 2px 5px rgba(0,0,0,.15); margin:20px 0; padding:15px; border-radius:5px; font-size:14px; color:#555" th:text="${mail.content}"></p>
+                <p>您可以 <a th:href="@{'https://hongtingwong.com/article/' + ${mail.articleId}}" style="text-decoration:none; color:#12addb" target="_blank" rel="noopener">查看回复完整内容</a>，欢迎再次光临
+                    <a href="https://hongtingwong.com" style="text-decoration:none; color:#12addb" target="_blank" rel="noopener">康庭的博客。</a>
+                    <img style="float: right" src="https://raw.githubusercontent.com/ht-w/blog-images/main/img/spiderman.jpg"></p>
+                    <p>您注意：此邮件由 <a href="https://hongtingwong.com/" style="color:#12addb"  target="_blank" rel="noopener">康庭的博客</a>自动发送，请勿直接回复</p>
+                    <p>若此邮件不是您请求的，请忽略并删除!</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
