@@ -56,8 +56,8 @@ mybatis-plus:
 aliyun:
   oss:
     endpoint: oss-ap-southeast-3.aliyuncs.com
-    keyId: LTAI5tNjdQpVzqFbV95Afsus
-    keySecret: Slw6325hsZ4z21nvWvyQNDKlwfeBin
+    keyId: ******************
+    keySecret: ******************
     bucketName: resources-blog
 
 blog:
