@@ -1,5 +1,5 @@
 # Blog
-a simple blog developed by me
+a simple blog designed and developed by me
 
 blog url: https://hongtingwong.com 
 
