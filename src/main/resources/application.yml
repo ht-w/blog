@@ -24,8 +24,8 @@ spring:
         max-active: -1
   mail:
     host: smtp-mail.outlook.com
-    username: hongtingblog@outlook.com
-    password: fyhs080088
+    username: ***********
+    password: ***********
     port: 587
     properties.mail.smtp.auth: true
     properties.mail.smtp.starttls.enable: true
