@@ -1,4 +1,4 @@
-# blog
+# Blog
 a simple blog developed by me
 
 blog url: https://hongtingwong.com 
