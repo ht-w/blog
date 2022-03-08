@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.hongting.mapper.ResourceMapper">
+
+
+
+    <select id="getDisableResourcePathData" resultType="java.lang.String">
+
+        SELECT CONCAT(LOWER(res.uri),'===', res.method)
+        FROM t_resource res WHERE res.status = 9 AND res.is_deleted = 0 ORDER BY res.id
+    </select>
+
+
+
+
+
+</mapper>

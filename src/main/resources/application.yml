@@ -1,0 +1,65 @@
+server:
+  port: 8110
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.254.215.64:3306/project_blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+  elasticsearch:
+    rest:
+      uris: 47.254.215.64:9200
+  redis:
+    host: 47.254.215.64
+    port: 6379
+    database: 1
+    timeout: 60s
+    lettuce:
+      pool:
+        max-idle: 500
+        min-idle: 50
+        max-wait: -1s
+        max-active: -1
+  mail:
+    host: smtp-mail.outlook.com
+    username: hongtingblog@outlook.com
+    password: fyhs080088
+    port: 587
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.protocol: smtp
+    properties.mail.tls: true
+
+
+
+
+#  redis:
+#    host: 192.168.189.129
+#    port: 6379
+#    database: 0
+#    timeout: 1800000
+#    lettuce:
+#      pool:
+#        max-active: 20
+#        max-wait: -1
+#        max-idle: 5
+#        min-idle: 0
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+
+aliyun:
+  oss:
+    endpoint: oss-ap-southeast-3.aliyuncs.com
+    keyId: LTAI5tNjdQpVzqFbV95Afsus
+    keySecret: Slw6325hsZ4z21nvWvyQNDKlwfeBin
+    bucketName: resources-blog
+
+blog:
+  comment:
+    avatar: https://raw.githubusercontent.com/ht-w/blog-images/main/img/blogavatar.jpg

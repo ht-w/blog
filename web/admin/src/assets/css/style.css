@@ -1,0 +1,17 @@
+html,
+body,
+#app{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ant-card{
+  background:#ffffff; 
+  margin:20px;
+}  
+
+.ant-table{
+  margin-top: 15px;
+}
+
